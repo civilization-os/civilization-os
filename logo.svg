@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 100">
+  <defs>
+    <style>
+      @keyframes blink { 50% { opacity: 0; } }
+      @keyframes type1 {
+        0%, 10% { clip-path: inset(0 100% 0 0); }
+        30%, 60% { clip-path: inset(0 0 0 0); }
+        70%, 100% { clip-path: inset(0 0 0 0); }
+      }
+      @keyframes type2 {
+        0%, 30% { clip-path: inset(0 100% 0 0); }
+        50%, 60% { clip-path: inset(0 0 0 0); }
+        70%, 100% { clip-path: inset(0 100% 0 0); }
+      }
+      @keyframes type3 {
+        0%, 50% { clip-path: inset(0 100% 0 0); }
+        70%, 80% { clip-path: inset(0 0 0 0); }
+        90%, 100% { clip-path: inset(0 100% 0 0); }
+      }
+      .c1 { animation: type1 8s infinite; }
+      .c2 { animation: type2 8s infinite; }
+      .c3 { animation: type3 8s infinite; }
+      .cursor { animation: blink 0.7s infinite; }
+    </style>
+  </defs>
+  <text x="20" y="40" font-family="monospace" font-size="24" fill="currentColor">
+    civilization-os<tspan class="cursor">|</tspan>
+  </text>
+  <text x="20" y="70" font-family="monospace" font-size="16" fill="currentColor" opacity="0.6">
+    <tspan class="c1">Writes code.</tspan>
+    <tspan class="c2"> Occasionally manages servers.</tspan>
+    <tspan class="c3"> Loves building tools.</tspan>
+    <tspan class="cursor">|</tspan>
+  </text>
+</svg>

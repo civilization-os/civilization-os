@@ -1,9 +1,9 @@
-# civilization-os
-
-Writes code. Occasionally manages servers.
-
-Loves building tools that make complicated things simple.
+<p align="center">
+  <img src="logo.svg" width="480" alt="civilization-os">
+</p>
 
 ---
 
-**Stay in touch**
+<p align="center">
+  <sub>Stay in touch</sub>
+</p>
