@@ -1,9 +1,9 @@
 # civilization-os
 
-写代码的，偶尔也管管服务器。
+Writes code. Occasionally manages servers.
 
-喜欢折腾工具链，让复杂的事情变简单。
+Loves building tools that make complicated things simple.
 
 ---
 
-**保持联系**
+**Stay in touch**
