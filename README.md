@@ -4,9 +4,9 @@
 
 ---
 
-没事就来写写代码，偶尔修修服务器。
+Just write code. Occasionally manage servers.
 
-觉得工具链就该好用一点，折腾着折腾着就做出来了。
+Tools should be simple to use. That's really all there is to it.
 
 ---
 
