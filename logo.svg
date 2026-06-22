@@ -1,26 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 100">
-  <defs>
-    <style>
-      @keyframes blink { 50% { opacity: 0; } }
-      @keyframes type {
-        0% { width: 0; }
-        30%, 100% { width: 130px; }
-      }
-      .cursor { animation: blink 0.8s step-end infinite; }
-    </style>
-    <clipPath id="t">
-      <rect x="0" y="0" height="30" fill="white" animation="type 4s ease forwards">
-        <animate attributeName="width" from="0" to="130" dur="4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
-      </rect>
-    </clipPath>
-  </defs>
+  <style>
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .c { animation: blink 0.8s step-end infinite; }
+    .fade { opacity: 0; animation: fadeIn 0.01s both; }
+    .d1 { animation-delay: 0s; }
+    .d2 { animation-delay: 0.12s; }
+    .d3 { animation-delay: 0.24s; }
+    .d4 { animation-delay: 0.36s; }
+    .d5 { animation-delay: 0.48s; }
+    .d6 { animation-delay: 0.60s; }
+    .d7 { animation-delay: 0.72s; }
+    .d8 { animation-delay: 0.84s; }
+    .d9 { animation-delay: 0.96s; }
+    .d10 { animation-delay: 1.08s; }
+    .d11 { animation-delay: 1.20s; }
+    .d12 { animation-delay: 1.32s; }
+  </style>
   <text x="20" y="40" font-family="monospace" font-size="24" fill="currentColor" font-weight="bold">
-    civilization-os<tspan class="cursor">|</tspan>
+    civilization-os<tspan class="c">|</tspan>
   </text>
-  <text x="20" y="72" font-family="monospace" font-size="16" fill="currentColor" opacity="0.7" clip-path="url(#t)">
-    Hi there 👋
-  </text>
-  <text x="150" y="72" font-family="monospace" font-size="16" fill="currentColor" opacity="0.7">
-    <tspan class="cursor">|</tspan>
+  <text x="20" y="70" font-family="monospace" font-size="16" fill="currentColor" opacity="0.7">
+    <tspan class="fade d1">H</tspan>
+    <tspan class="fade d2">i</tspan>
+    <tspan class="fade d3"> </tspan>
+    <tspan class="fade d4">t</tspan>
+    <tspan class="fade d5">h</tspan>
+    <tspan class="fade d6">e</tspan>
+    <tspan class="fade d7">r</tspan>
+    <tspan class="fade d8">e</tspan>
+    <tspan class="fade d9"> </tspan>
+    <tspan class="fade d10">👋</tspan>
+    <tspan class="c">|</tspan>
   </text>
 </svg>
