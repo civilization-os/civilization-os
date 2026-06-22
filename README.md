@@ -1,53 +1,34 @@
-# civilization-os 🏛️
+# civilization-os
 
-> **Server operations runtime for AI agents.**
->
-> We build MCP (Model Context Protocol) servers that turn AI coding agents into full-fledged server operations platforms.
+> 让 AI 真正能操作服务器，而不是只写代码。
 
----
+**ssh-mcp** 是我们第一个项目。
 
-## Projects
+我们相信 AI 不该只停在"帮你看代码"——它应该能连上服务器、排查问题、部署服务、甚至帮你盯着日志。而人类只需要在旁边看着，随时可以叫停或者接手。
 
-### [🔌 ssh-mcp](https://github.com/civilization-os/ssh-mcp)
-
-Stateful remote server management for AI agents — persistent SSH sessions, interactive PTY terminals, SFTP file operations, Kubernetes management, system monitoring, and Java diagnostics via Arthas.
-
-Use it with Claude Code, Reasonix, Cursor, Codex, or any MCP-compatible AI agent.
-
-```
-ssh_connect → ssh_exec → ssh_file_read → ssh_sysinfo
-     ↓
-ssh_shell (interactive PTY with real-time output streaming)
-     ↓
-ssh_k8s_list_pods → ssh_k8s_pod_logs → ssh_k8s_arthas_attach
-```
-
-| Feature | Description |
-|---------|-------------|
-| 🖥️ **Interactive Shell** | Full PTY with real-time output, `expect` pattern matching, ANSI stripping |
-| 📁 **SFTP** | Read, write, list, delete, rename, mkdir, chmod, stat — full file ops |
-| 📊 **Monitoring** | System info, processes, disk usage, log tail & search |
-| ☸️ **Kubernetes** | Pod management, exec, logs, cp, and Arthas Java diagnostics |
-| 🔐 **Security** | Credentials stay in process memory only — never persisted to disk |
+这就是 civilization-os 在做的事。
 
 ---
 
-## Why civilization-os?
+### 我们在做
 
-AI agents are great at *writing* code. But deploying, monitoring, and operating servers requires a different kind of tool — one that maintains state, streams real-time output, and lets humans observe and intervene.
+| 项目 | 做什么 |
+|------|--------|
+| [ssh-mcp](https://github.com/civilization-os/ssh-mcp) | 让 AI 通过 SSH/K8s 管理服务器，持久会话、交互终端、文件操作、K8s 管理 |
 
-We build that bridge.
+### 我们的原则
 
----
-
-## Get Involved
-
-- 🌐 **[ssh-mcp](https://github.com/civilization-os/ssh-mcp)** — Star us, open issues, send PRs
-- 💬 **Discussions** — Share your use cases and ideas
-- 🤝 **Contributions welcome** — Check out our good first issues
+- **人机协作，不是替代** — AI 执行，人决策。随时可以介入。
+- **安全优先** — 密码和密钥只在内存中，不落盘。
+- **体验至上** — Web UI 实时可见，不是黑盒操作。
 
 ---
 
-<p align="center">
-  <sub>Built with ❤️ for the AI operations era</sub>
-</p>
+欢迎 Star、提 Issue、一起讨论。
+
+<!--
+
+过去的软件让人操作机器。
+未来的软件让 AI 操作机器，人操作 AI。
+
+-->
