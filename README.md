@@ -1,33 +1,21 @@
 <div align="center">
 
-<img src="logo.svg" width="220" alt="civilization-os">
+<img src="logo.svg" width="260" alt="civilization-os">
 
-</div>
+<br>
 
-```console
-┌──(naqi㉿civilization-os)-[~]
-└─$ whoami
-那琦 (Na Qi)
+### Just write code. Occasionally manage servers.
 
-┌──(naqi㉿civilization-os)-[~]
-└─$ cat about.txt
-Just write code.
-Occasionally manage servers.
+<sub>Tools should be simple to use. That's really all there is to it.</sub>
 
-Tools should be simple to use.
-That's really all there is to it.
+<br><br>
 
-┌──(naqi㉿civilization-os)-[~]
-└─$ ls
-wiki/  website/
+<a href="https://civilization-os.github.io/docs/">Wiki</a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://civilization-os.github.io/">Website</a>
 
-┌──(naqi㉿civilization-os)-[~]
-└─$ cat .signature
-// Build quietly. Keep exploring.
-```
+<br><br>
 
-<div align="center">
-
-[Wiki ↗](https://civilization-os.github.io/docs/) · [Personal site ↗](https://civilization-os.github.io/)
+<sub><i>Build quietly. Keep exploring.</i></sub>
 
 </div>
